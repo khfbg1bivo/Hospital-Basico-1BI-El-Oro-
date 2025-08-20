@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+..<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -174,6 +174,7 @@
             text-decoration: none;
             transition: all 0.3s ease;
             border-left: 4px solid transparent;
+            cursor: pointer;
         }
         
         .submenu-item:hover {
@@ -274,7 +275,7 @@
             font-size: 1.3rem;
         }
         
-        .card .img {
+        .card .img-placeholder {
             width: 100%;
             height: 180px;
             border-radius: 8px;
@@ -283,9 +284,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #f0f5fa, #e0e9f4);
+            background: #f0f5fa;
             color: #004080;
-            font-size: 3rem;
+            font-size: 1rem;
+            border: 2px dashed #ccc;
         }
         
         .card p {
@@ -551,34 +553,64 @@
             <p>
                 Proporcionar apoyo a las operaciones militares, y dar atención de salud integral, con calidad y calidez, tanto al personal militar como a los pacientes de la Red Pública de Salud (RPIS), con personal altamente calificado, comprometido, y con la tecnología acorde a nuestro nivel de complejidad; a fin de preservar y mantener la salud del potencial humano de las Fuerzas Armadas, así como el público en general, alineados la legislación de salud y normativas vigentes.
             </p>
-            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Imagen del Hospital">
+            <div class="img-placeholder">Espacio para imagen del hospital</div>
         </section>
 
         <!-- SECCIÓN ESPECIALIDADES -->
         <section id="especialidades">
-            <h2>ESPECIALIDADES MÉDICAS</h2>
+            <h2>ESPECIALIDADES QUE MANEJAMOS</h2>
             <h3>Consulta Externa</h3>
 
             <div class="grid-especialidades">
                 <div class="card">
                     <h3>Cardiología</h3>
-                    <div class="img"><i class="fas fa-heartbeat"></i></div>
+                    <div class="img-placeholder">Imagen de Cardiología</div>
                     <p>Se ocupa del diagnóstico y tratamiento de enfermedades relacionadas con el corazón y el sistema circulatorio.</p>
                 </div>
                 <div class="card">
                     <h3>Cirugía General</h3>
-                    <div class="img"><i class="fas fa-stethoscope"></i></div>
+                    <div class="img-placeholder">Imagen de Cirugía General</div>
                     <p>Especialidad que realiza procedimientos quirúrgicos para tratar diversas enfermedades y condiciones médicas.</p>
                 </div>
                 <div class="card">
                     <h3>Medicina Interna</h3>
-                    <div class="img"><i class="fas fa-user-md"></i></div>
+                    <div class="img-placeholder">Imagen de Medicina Interna</div>
                     <p>Atiende a pacientes adultos en el diagnóstico y tratamiento de enfermedades que afectan a los órganos internos.</p>
                 </div>
                 <div class="card">
                     <h3>Nutrición</h3>
-                    <div class="img"><i class="fas fa-apple-alt"></i></div>
+                    <div class="img-placeholder">Imagen de Nutrición</div>
                     <p>Encargada de orientar en la correcta alimentación y tratamiento de enfermedades relacionadas con la dieta.</p>
+                </div>
+                <div class="card">
+                    <h3>Psicología Clínica</h3>
+                    <div class="img-placeholder">Imagen de Psicología Clínica</div>
+                    <p>Brinda apoyo psicológico para la prevención, diagnóstico y tratamiento de trastornos emocionales y conductuales.</p>
+                </div>
+                <div class="card">
+                    <h3>Pediatría - Neonatología</h3>
+                    <div class="img-placeholder">Imagen de Pediatría</div>
+                    <p>Se centra en la atención de niños y recién nacidos para garantizar su desarrollo y salud integral.</p>
+                </div>
+                <div class="card">
+                    <h3>Traumatología - Ortopedia</h3>
+                    <div class="img-placeholder">Imagen de Traumatología</div>
+                    <p>Diagnóstico y tratamiento de lesiones en huesos, músculos y articulaciones.</p>
+                </div>
+                <div class="card">
+                    <h3>Anestesiología</h3>
+                    <div class="img-placeholder">Imagen de Anestesiología</div>
+                    <p>Especialidad que aplica anestesia en cirugías y controla el dolor de los pacientes durante y después de los procedimientos.</p>
+                </div>
+                <div class="card">
+                    <h3>Odontología</h3>
+                    <div class="img-placeholder">Imagen de Odontología</div>
+                    <p>Encargada del cuidado, prevención y tratamiento de enfermedades bucales y dentales.</p>
+                </div>
+                <div class="card">
+                    <h3>Ginecología - Obstetricia</h3>
+                    <div class="img-placeholder">Imagen de Ginecología</div>
+                    <p>Se ocupa de la salud del sistema reproductor femenino y del seguimiento del embarazo.</p>
                 </div>
             </div>
         </section>
@@ -606,6 +638,16 @@
                 <h4><i class="fas fa-pills"></i> Farmacia</h4>
                 <p><strong>Dispensación de medicamentos</strong> y asesoramiento farmacéutico para el uso adecuado de los tratamientos.</p>
             </div>
+            
+            <div id="emergencia" class="servicio-detalle">
+                <h4><i class="fas fa-ambulance"></i> Servicio de Emergencia</h4>
+                <p><strong>Atención médica inmediata</strong> las 24 horas para casos urgentes y de alta prioridad.</p>
+            </div>
+            
+            <div id="hospitalizacion" class="servicio-detalle">
+                <h4><i class="fas fa-procedures"></i> Hospitalización</h4>
+                <p><strong>Áreas de hospitalización</strong> con comodidades y atención médica especializada para pacientes que requieren cuidado continuo.</p>
+            </div>
         </section>
 
         <!-- SECCIÓN APOYO DIAGNÓSTICO -->
@@ -625,6 +667,21 @@
             <div id="tomografia" class="servicio-detalle">
                 <h4><i class="fas fa-cogs"></i> Tomografía</h4>
                 <p><strong>Tomógrafo multicorte</strong> que permite obtener imágenes detalladas del interior del cuerpo.</p>
+            </div>
+            
+            <div id="resonancia" class="servicio-detalle">
+                <h4><i class="fas fa-magnet"></i> Resonancia Magnética</h4>
+                <p><strong>Equipo de resonancia magnética</strong> para obtener imágenes detalladas de órganos y estructuras internas.</p>
+            </div>
+            
+            <div id="laboratorio-diagnostico" class="servicio-detalle">
+                <h4><i class="fas fa-microscope"></i> Laboratorio Clínico</h4>
+                <p><strong>Análisis clínicos especializados</strong> para apoyo al diagnóstico médico.</p>
+            </div>
+            
+            <div id="patologia" class="servicio-detalle">
+                <h4><i class="fas fa-vial"></i> Anatomía Patológica</h4>
+                <p><strong>Estudio de muestras tisulares</strong> para diagnóstico preciso de enfermedades.</p>
             </div>
         </section>
 
@@ -758,4 +815,4 @@
         });
     </script>
 </body>
-    </html>
+</html>
