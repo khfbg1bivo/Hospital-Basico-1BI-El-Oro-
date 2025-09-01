@@ -38,6 +38,31 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }  
+           /* Estilos para organizar en columnas */
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    
+    .service-category {
+        flex: 1;
+        min-width: 250px;
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .service-category > ul {
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    
+    .service-category li {
+        margin-bottom: 8px;
         }
         footer {
             background: #004080;
@@ -54,17 +79,25 @@
         <h2>Servicio de Laboratorio Clínico</h2>
     </header>
 
-    <nav>
+    <nav> 
         <a href="index.html">Inicio</a>
+        <a href="fisioterapia.html">Fisioterapia</a>
+        <a href="imagenologia.html">Imagenología</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 
-    <section>
-        <h2>Análisis y Diagnóstico Clínico</h2>
-        <p>
-            Nuestro laboratorio clínico realiza pruebas y análisis de alta precisión para apoyar el diagnóstico médico:
-        </p>
-        <ul>
-            <li>EXAMENES DE SANGRE:</li>
+
+
+<section>
+    <h2>Análisis y Diagnóstico Clínico</h2>
+    <p>
+        Nuestro laboratorio clínico realiza pruebas y análisis de alta precisión para apoyar el diagnóstico médico:
+    </p>
+    
+    <div class="services-container">
+        <!-- Columna 1: Exámenes de Sangre -->
+        <div class="service-category">
+            <strong>EXAMENES DE SANGRE:</strong>
             <ul>
                 <li>Biometria Hematica</li>
                 <li>Grupo Sanguineo</li>
@@ -80,27 +113,38 @@
                 <li>Hierro Serico</li>
                 <li>Calcio Serico</li>
             </ul>
-            <li>EXAMEN DE ORINA:</li>
+        </div>
+        
+        <!-- Columna 2: Exámenes de Orina y Heces -->
+        <div class="service-category">
+            <strong>EXAMEN DE ORINA:</strong>
             <ul>
                 <li>Uroanalisis de Rutina</li>
             </ul>
-            <li>EXAMEN DE HECES</li>
-              <ul>
+            
+            <strong>EXAMEN DE HECES:</strong>
+            <ul>
                 <li>Coproparasitario</li>
                 <li>Helicobacter PYL. en Heces</li>
                 <li>Polimorfos Nucleares</li>
                 <li>Adenovirus</li>
                 <li>Sangre Oculta en Heces</li>
             </ul>
-            <li>SEROLOGIA:</li>
+        </div>
+        
+        <!-- Columna 3: Serología -->
+        <div class="service-category">
+            <strong>SEROLOGIA:</strong>
             <ul>
                 <li>HIV 1+2</li>
                 <li>Factor Reumatoide</li>
                 <li>Prueba de Embarazo Cualitativo</li>
                 <li>V.D.R.L</li>
             </ul>
-        </ul>
-    </section>
+        </div>
+    </div>
+</section>
+
 
     <footer>
         <p>&copy; 2025 Hospital Básico 1BI "El Oro"</p>
